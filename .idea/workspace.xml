@@ -18,6 +18,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="homework-33" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -88,7 +101,7 @@
       <workItem from="1760699077193" duration="12030000" />
       <workItem from="1760806833029" duration="4000" />
       <workItem from="1760883265823" duration="1702000" />
-      <workItem from="1760892360734" duration="3555000" />
+      <workItem from="1760892360734" duration="4104000" />
     </task>
     <task id="LOCAL-00001" summary="Inital commit - added linear search code">
       <option name="closed" value="true" />
@@ -130,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760895655025</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Inital commit - added linear search code">
+      <option name="closed" value="true" />
+      <created>1760897583991</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760897583991</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
