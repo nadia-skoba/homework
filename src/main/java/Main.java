@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World");
-        String name = "Nadin";
+        String name = "Nadin";////  створення змінних
         int age = 23;
         double height = 1.70;
         boolean isFast = true;
@@ -9,10 +9,10 @@ public class Main {
         System.out.println(age);
         System.out.println(height);
         System.out.println(isFast);
-        if (age >= 18) {
+        if (age >= 18) { /// / перевірка віку
             System.out.println("Доступ дозволено");
         } else System.out.println("Доступ заборонено");
-        String day = "Субота";
+        String day = "Субота"; ////перевірка дня тижня
         switch (day) {
             case "Понеділок":
             case "Вівторок":
@@ -28,7 +28,7 @@ public class Main {
             default:
                 System.out.println("Такого дня не існує");
         }
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 5; i++) { /// //  цикл for
             System.out.println(i);
         }
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
@@ -40,7 +40,7 @@ public class Main {
             System.out.println("Число " + target + "не знайдено");
         }
     }
-
+/// /// метод лінійного пошуку
     public static int linearSearch(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
