@@ -6,6 +6,7 @@ public class Main {
         int age = 23;
         double height = 1.70;
         boolean isFast = true;
+
         System.out.println(name);
         System.out.println(age);
         System.out.println(height);
