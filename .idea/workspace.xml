@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7940dcc5-e33d-43ed-95a7-8aa33da11413" name="Changes" comment="Inital commit - added linear search code" />
+    <list default="true" id="49fa51d6-7096-4dd4-97d2-e438ad785a8a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,7 +24,8 @@
           <entry type="LOCAL">
             <value>
               <list>
-                <branch-info repo="$PROJECT_DIR$" source="homework-33" />
+                <branch-info repo="$PROJECT_DIR$" source="dz" />
+                <branch-info repo="$PROJECT_DIR$" source="javadz1" />
               </list>
             </value>
           </entry>
@@ -33,45 +34,57 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dz" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/Main.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="34Bu1Q36lXudj2TRvyhvBbNoouY" />
+  <component name="ProjectId" id="34VRY5NWtmA2wJ7qY6DjAM044pV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Calculator.executor": "Run",
     "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Application.Product.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "git-widget-placeholder": "homework-33",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dz37",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "vcs.Git",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Calculator" />
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Product" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Product" />
       <module name="test" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,6 +93,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Product" />
+        <item itemvalue="Application.Calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -93,83 +108,76 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7940dcc5-e33d-43ed-95a7-8aa33da11413" name="Changes" comment="" />
-      <created>1760699074829</created>
+      <changelist id="49fa51d6-7096-4dd4-97d2-e438ad785a8a" name="Changes" comment="" />
+      <created>1761296797216</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1760699074829</updated>
-      <workItem from="1760699077193" duration="12030000" />
-      <workItem from="1760806833029" duration="4000" />
-      <workItem from="1760883265823" duration="1702000" />
-      <workItem from="1760892360734" duration="4104000" />
+      <updated>1761296797216</updated>
+      <workItem from="1761296798798" duration="54000" />
+      <workItem from="1761296857287" duration="32000" />
+      <workItem from="1761296901600" duration="126000" />
+      <workItem from="1761297038192" duration="78000" />
+      <workItem from="1761297138785" duration="335000" />
+      <workItem from="1761297481379" duration="1000" />
+      <workItem from="1761297499289" duration="1445000" />
+      <workItem from="1761817221257" duration="701000" />
+      <workItem from="1761855275062" duration="1612000" />
+      <workItem from="1762544516536" duration="3090000" />
+      <workItem from="1762549329353" duration="17631000" />
     </task>
-    <task id="LOCAL-00001" summary="Inital commit - added linear search code">
-      <option name="closed" value="true" />
-      <created>1760895506570</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1760895506571</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Inital commit - added linear search code">
-      <option name="closed" value="true" />
-      <created>1760895538296</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1760895538296</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Inital commit - added linear search code">
-      <option name="closed" value="true" />
-      <created>1760895545171</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1760895545171</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Inital commit - added linear search code">
-      <option name="closed" value="true" />
-      <created>1760895647162</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1760895647162</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Inital commit - added linear search code">
-      <option name="closed" value="true" />
-      <created>1760895655025</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1760895655025</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Inital commit - added linear search code">
-      <option name="closed" value="true" />
-      <created>1760897583991</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1760897583991</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="7f0868db-ffad-4bde-9521-851297247517" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="7f0868db-ffad-4bde-9521-851297247517">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="javatest1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="javatest1" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Inital commit - added linear search code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inital commit - added linear search code" />
   </component>
 </project>
