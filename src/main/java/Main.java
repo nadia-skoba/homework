@@ -1,63 +1,47 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        String name = "Nadin";
-        int age = 23;
-        double height = 1.70;
-        boolean isFast = true;
-        System.out.println(name);
-        System.out.println(age);
-        System.out.println(height);
-        System.out.println(isFast);
-        if (age >= 18) {
-            System.out.println("Доступ дозволено");
-        } else System.out.println("Доступ заборонено");
-        String day = "Субота";
-        switch (day) {
-            case "Понеділок":
-            case "Вівторок":
-            case "Середа":
-            case "Четверг":
-            case "П'ятниця":
-                System.out.println("Робочий день");
-                break;
-            case "Субота":
-            case "Неділя":
-                System.out.println("Вихідний день");
-                break;
-            default:
-                System.out.println("Такого дня не існує");
-        }
-        for (int i = 1; i <= 5; i++) {
-            System.out.println(i);
-        }
-        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        int target = 6;
-        int index = linearSearch(numbers, target);
-        if (index != -1) {
-            System.out.println("знайдено число" + target + "на позиції" + index);
-        } else {
-            System.out.println("Число " + target + "не знайдено");
-        }
-    }
 
-    public static int linearSearch(int[] arr, int target) {
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == target) {
-                return i;
-            }
+        Product phone = new DiscountedProduct("Телефон", 1000, true, 10);
+        Product laptop = new DiscountedProduct("Ноутбук", 2500, true, 15);
+        Product macbook = new DiscountedProduct("Macbook", 3000, true, 15);
+
+        // Створення списку продуктів
+        ArrayList<Product> productList = new ArrayList<>();
+        productList.add(phone);
+        productList.add(laptop);
+        productList.add(macbook);
+
+        System.out.println("Список продуктів:");
+        for (Product product : productList) {
+            product.printProductInfo();
         }
-        return target;
+
+        // Створення набору категорій
+        HashSet<String> categories = new HashSet<>();
+        categories.add("Електроніка");
+        categories.add("Одяг");
+        categories.add("Побутова техніка");
+
+        System.out.println(categories.contains("Одяг"));   // true
+        System.out.println(categories.contains("Взуття")); // false
+
+        // Створення список продуктів і цін
+        HashMap<String, Double> productPrices = new HashMap<>();
+        productPrices.put(phone.getName(), phone.getPrice());
+        productPrices.put(laptop.getName(), laptop.getPrice());
+        productPrices.put(macbook.getName(), macbook.getPrice());
+
+        System.out.println("Список продуктів і цін:");
+        for (Map.Entry<String, Double> entry : productPrices.entrySet()) {
+            System.out.println("Продукт: " + entry.getKey() + " Ціна: " + entry.getValue());
+        }
     }
 }
-
-
-
-
-
-
-
-
 
 
 

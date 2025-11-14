@@ -1,0 +1,164 @@
+Index: src/main/java/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello World\");\n\n        //створення змінних\n        String name = \"Nadin\";\n        int age = 23;\n        double height = 1.70;\n        boolean isFast = true;\n\n        System.out.println(name);\n        System.out.println(age);\n        System.out.println(height);\n        System.out.println(isFast);\n\n       //перевірка віку\n        if (age >= 18) {\n            System.out.println(\"Доступ дозволено\");\n        } else\n            System.out.println(\"Доступ заборонено\");\n\n        //перевірка дня тижня\n        String day = \"Субота\";\n        switch (day) {\n            case \"Понеділок\":\n            case \"Вівторок\":\n            case \"Середа\":\n            case \"Четверг\":\n            case \"П'ятниця\":\n                System.out.println(\"Робочий день\");\n                break;\n            case \"Субота\":\n            case \"Неділя\":\n                System.out.println(\"Вихідний день\");\n                break;\n            default:\n                System.out.println(\"Такого дня не існує\");\n        }\n\n        //цикл for\n        for (int i = 1; i <= 5; i++) {\n            System.out.println(i);\n        }\n        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\n        int target = 6;\n        int index = linearSearch(numbers, target);\n        if (index != -1) {\n            System.out.println(\"знайдено число\" + target + \"на позиції\" + index);\n        } else {\n            System.out.println(\"Число \" + target + \"не знайдено\");\n        }\n    }\n\n        //метод лінійного пошуку\n    public static int linearSearch(int[] arr, int target) {\n        for (int i = 0; i < arr.length; i++) {\n            if (arr[i] == target) {\n                return i;\n            }\n        }\n        return target;\n    }\n}\n\n\n\n\n\n\n\n\n\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Main.java b/src/main/java/Main.java
+--- a/src/main/java/Main.java	(revision f4eb4183f66edebe9235f9de9215111b97d1c477)
++++ b/src/main/java/Main.java	(date 1761771487953)
+@@ -71,4 +71,3 @@
+ 
+ 
+ 
+-
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"49fa51d6-7096-4dd4-97d2-e438ad785a8a\" name=\"Changes\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <favorite-branches>\n      <branch-storage>\n        <map>\n          <entry type=\"LOCAL\">\n            <value>\n              <list>\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"dz\" />\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"javadz1\" />\n              </list>\n            </value>\n          </entry>\n        </map>\n      </branch-storage>\n    </favorite-branches>\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"javatest1\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 7\n}</component>\n  <component name=\"ProjectId\" id=\"34VRY5NWtmA2wJ7qY6DjAM044pV\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"git-widget-placeholder\": \"dz\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.15\",\n    \"project.structure.side.proportion\": \"0.2\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84\" />\n        <option value=\"bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"49fa51d6-7096-4dd4-97d2-e438ad785a8a\" name=\"Changes\" comment=\"\" />\n      <created>1761296797216</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1761296797216</updated>\n      <workItem from=\"1761296798798\" duration=\"54000\" />\n      <workItem from=\"1761296857287\" duration=\"32000\" />\n      <workItem from=\"1761296901600\" duration=\"126000\" />\n      <workItem from=\"1761297038192\" duration=\"78000\" />\n      <workItem from=\"1761297138785\" duration=\"335000\" />\n      <workItem from=\"1761297481379\" duration=\"1000\" />\n      <workItem from=\"1761297499289\" duration=\"1445000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"javatest1\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f4eb4183f66edebe9235f9de9215111b97d1c477)
++++ b/.idea/workspace.xml	(date 1761815885471)
+@@ -4,7 +4,12 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="49fa51d6-7096-4dd4-97d2-e438ad785a8a" name="Changes" comment="" />
++    <list default="true" id="49fa51d6-7096-4dd4-97d2-e438ad785a8a" name="Changes" comment="Revert &quot;Inital commit - added linear search code&quot;&#10;&#10;This reverts commit 840300ef99a45f9759e20ee920ad64b906ccd981.&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
++      <change afterPath="$PROJECT_DIR$/src/main/java/Calculator.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/praktika.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -32,6 +37,9 @@
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="CurrentFile" />
++  </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 7
+ }</component>
+@@ -42,6 +50,8 @@
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
++    "Application.Calculator.executor": "Coverage",
++    "Application.praktika.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+     "RunOnceActivity.git.unshallow": "true",
+@@ -58,6 +68,28 @@
+     "vue.rearranger.settings.migration": "true"
+   }
+ }]]></component>
++  <component name="RunManager" selected="Application.Calculator">
++    <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Calculator" />
++      <module name="test" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="praktika" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="praktika" />
++      <module name="test" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.Calculator" />
++        <item itemvalue="Application.praktika" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+Index: src/main/java/praktika.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/praktika.java b/src/main/java/praktika.java
+new file mode 100644
+--- /dev/null	(date 1761815919385)
++++ b/src/main/java/praktika.java	(date 1761815919385)
+@@ -0,0 +1,64 @@
++import java.util.Scanner;
++
++public class praktika {
++
++    public static int add(int a, int b) {
++        return a + b;
++    }
++
++    public static int divide(int d, int b) {
++        return d / b;
++    }
++
++    public static int subtract(int g, int h) {
++        return g - h;
++    }
++
++    public static int multiply(int m, int n) {
++        return m * n;
++    }
++
++    public static boolean checkPassword(String password) {
++        return false;
++    }
++
++    public static void main(String[] args) {
++        System.out.println(add(5, 7));
++
++
++        int result = divide(10, 2);
++        System.out.println(result);
++
++        int result2 = subtract(18, 7);
++        System.out.println(result2);
++
++        int result3 = multiply(25, 7);
++        System.out.println(result3);
++
++
++        Scanner sc = new Scanner(System.in);
++
++        System.out.println("Vlad");
++        String s = sc.nextLine();
++        System.out.println("I Love");
++        String s1 = sc.nextLine();
++        System.out.println("You");
++        String s2 = sc.nextLine();
++        System.out.println("Дорогий" + s + "Дуже" + s1 + "YOU" + s2);
++        sc.close();
++
++        int MYweight = 85;
++        int GOODweight = 65;
++        if (GOODweight > MYweight) {
++            System.out.println("нормальна вага");
++        } else {
++            System.out.println("товста");
++
++            int sum = 0;
++            for (int i = 1; i <= 100; i++) {
++                sum = sum + i;
++            }
++            System.out.println(sum);
++        }
++    }
++}
+\ No newline at end of file
+diff --git a/src/main/java/Calculator.java b/src/main/java/Calculator.java
+new file mode 100644
