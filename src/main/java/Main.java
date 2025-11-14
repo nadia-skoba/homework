@@ -1,28 +1,47 @@
-public class Main {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 
+public class Main {
     public static void main(String[] args) {
 
-        DiscountedProduct phone = new DiscountedProduct("Phone", 40000, true, 0.10);
-        DiscountedProduct macbook = new DiscountedProduct("MacBook", 60000, true, 0.15);
+        Product phone = new DiscountedProduct("Телефон", 1000, true, 10);
+        Product laptop = new DiscountedProduct("Ноутбук", 2500, true, 15);
+        Product macbook = new DiscountedProduct("Macbook", 3000, true, 15);
 
-        System.out.println("Product: " + phone.getName());
-        System.out.println("Original price: " + phone.getPrice());
-        System.out.println("Price with discount: " + phone.getPriceWithDiscount());
-        System.out.println("Available: " + phone.isAvailable());
+        // Створення списку продуктів
+        ArrayList<Product> productList = new ArrayList<>();
+        productList.add(phone);
+        productList.add(laptop);
+        productList.add(macbook);
 
-        System.out.println();
+        System.out.println("Список продуктів:");
+        for (Product product : productList) {
+            product.printProductInfo();
+        }
 
-        System.out.println("Product: " + macbook.getName());
-        System.out.println("Original price: " + macbook.getPrice());
-        System.out.println("Price with discount: " + macbook.getPriceWithDiscount());
-        System.out.println("Available: " + macbook.isAvailable());
+        // Створення набору категорій
+        HashSet<String> categories = new HashSet<>();
+        categories.add("Електроніка");
+        categories.add("Одяг");
+        categories.add("Побутова техніка");
 
-        System.out.println();
+        System.out.println(categories.contains("Одяг"));   // true
+        System.out.println(categories.contains("Взуття")); // false
 
-        User user1 = new Admin();
-        User user2 = new Customer();
+        // Створення список продуктів і цін
+        HashMap<String, Double> productPrices = new HashMap<>();
+        productPrices.put(phone.getName(), phone.getPrice());
+        productPrices.put(laptop.getName(), laptop.getPrice());
+        productPrices.put(macbook.getName(), macbook.getPrice());
 
-        System.out.println(user1.getRole());
-        System.out.println(user2.getRole());
+        System.out.println("Список продуктів і цін:");
+        for (Map.Entry<String, Double> entry : productPrices.entrySet()) {
+            System.out.println("Продукт: " + entry.getKey() + " Ціна: " + entry.getValue());
+        }
     }
 }
+
+
+
